@@ -40,11 +40,11 @@ public class ArrayImplementation{
                 System.out.print(element + " ");
             }
         }
-        
+        System.out.println();
         // Step 6: Output all the elements of the array in DESCENDING ORDER
         int temp = 0;
         for(int i = 0; i < array.length; i++){
-            for(int j = 0; j < array.length-1; i++){
+            for(int j = 0; j < array.length-1; j++){
                 if(array[j] < array[j+1]){
                     temp = array[j];
                     array[j] = array[j+1];
@@ -53,7 +53,7 @@ public class ArrayImplementation{
             }
         }
         
-        System.out.println("Array elements in descending order: ");
+        System.out.print("Array elements in descending order: ");
         for(int element:array) {
             System.out.print(element + " ");
         }
